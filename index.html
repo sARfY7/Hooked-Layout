@@ -2,18 +2,13 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="style2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="slideshow.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="vibrant.js/dist/Vibrant.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-    <script src="slideshow.js"></script>
-    <script src="main.js"></script>
     <title>hooked</title>
 </head>
 
@@ -45,355 +40,127 @@
     <!-- Discover Hero -->
     <!-- ======================================= -->
 
-    <main class="main-content">
-        <section class="slideshow">
-            <div class="slideshow-inner">
-                <div class="slides">
-                    <div class="slide is-active ">
-                        <div class="slide-content">
-                            <div class="caption">
-                                <div class="title">Avengers: Infinity War Part I</div>
-                                <div class="text">
-                                    <p>Slide description 1</p>
-                                </div>
-                                <a href="#" class="btn">
-                                    <span class="btn-inner">Synopsis</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <img src="bg.jpg" alt="" class="image" />
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <div class="caption">
-                                <div class="title">Slide title 2</div>
-                                <div class="text">
-                                    <p>Slide description 2</p>
-                                </div>
-                                <a href="#" class="btn">
-                                    <span class="btn-inner">Synopsis</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <img src="bg1.jpg" alt="" class="image" />
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <div class="caption">
-                                <div class="title">Slide title 3</div>
-                                <div class="text">
-                                    <p>Slide description 3</p>
-                                </div>
-                                <a href="#" class="btn">
-                                    <span class="btn-inner">Synopsis</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <img src="bg.jpg" alt="" class="image" />
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="slide-content">
-                            <div class="caption">
-                                <div class="title">Slide title 4</div>
-                                <div class="text">
-                                    <p>Slide description 4</p>
-                                </div>
-                                <a href="#" class="btn">
-                                    <span class="btn-inner">Synopsis</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="image-container">
-                            <img src="bg1.jpg" alt="" class="image" />
-                        </div>
-                    </div>
+    <div class="slider">
+        <div class="slider-wrapper flex">
+            <div class="slide flex">
+                <div class="slide-image slider-link prev">
+                    <img src="p1.jpg">
+                    <div class="overlay"></div>
                 </div>
-                <div class="pagination">
-                    <div class="item is-active">
-                        <span class="icon">1</span>
-                    </div>
-                    <div class="item">
-                        <span class="icon">2</span>
-                    </div>
-                    <div class="item">
-                        <span class="icon">3</span>
-                    </div>
-                    <div class="item">
-                        <span class="icon">4</span>
-                    </div>
-                </div>
-                <div class="arrows">
-                    <div class="arrow prev">
-                        <span class="svg svg-arrow-left">
-                            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
-                                <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
-                                /> </svg>
-                            <span class="alt sr-only"></span>
-                        </span>
-                    </div>
-                    <div class="arrow next">
-                        <span class="svg svg-arrow-right">
-                            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                                y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve">
-                                <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
-                                /> </svg>
-                            <span class="alt sr-only"></span>
-                        </span>
-                    </div>
+                <div class="slide-content">
+                    <div class="slide-date">30.07.2017.</div>
+                    <div class="slide-title">Star Wars: The Last Jedi</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat
+                        electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- <div class="discover-hero-wrapper"> -->
-    <!-- <div class="discover-hero">
-            <img src="bg.jpg" alt="" class="bg">
-            <div class="detail">
-                <div class="movie-title-year">
-                    <p class="movie-title">Avengers: Infinity War Part - I</p>
-                    <p class="movie-year">2018</p>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="p2.jpg">
+                    <div class="overlay"></div>
                 </div>
-                <div class="movie-genre">
-                    <p class="genre">Action</p>
-                    <p class="genre">Adventure</p>
-                    <p class="genre">Sci Fi</p>
+                <div class="slide-content">
+                    <div class="slide-date">30.08.2017.</div>
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat
+                        electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
                 </div>
-                <a href="#" class="btn">Synopsis</a>
             </div>
-        </div>
-        <div class="discover-hero">
-            <img src="bg1.jpg" alt="" class="bg">
-            <div class="detail">
-                <div class="movie-title-year">
-                    <p class="movie-title">Avengers: Infinity War</p>
-                    <p class="movie-year">2018</p>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="p6.jpg">
+                    <div class="overlay"></div>
                 </div>
-                <div class="movie-genre">
-                    <p class="genre">Action</p>
-                    <p class="genre">Adventure</p>
-                    <p class="genre">Sci Fi</p>
+                <div class="slide-content">
+                    <div class="slide-date">30.09.2017.</div>
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat
+                        electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
                 </div>
-                <a href="#" class="btn">Synopsis</a>
             </div>
-        </div>
-        <div class="discover-hero">
-            <img src="bg.jpg" alt="" class="bg">
-            <div class="detail">
-                <div class="movie-title-year">
-                    <p class="movie-title">Avengers: Infinity War Part - I</p>
-                    <p class="movie-year">2018</p>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="p7.jpg">
+                    <div class="overlay"></div>
                 </div>
-                <div class="movie-genre">
-                    <p class="genre">Action</p>
-                    <p class="genre">Adventure</p>
-                    <p class="genre">Sci Fi</p>
-                </div>
-                <a href="#" class="btn">Synopsis</a>
-            </div>
-        </div>
-        <div class="discover-hero">
-            <img src="bg1.jpg" alt="" class="bg">
-            <div class="detail">
-                <div class="movie-title-year">
-                    <p class="movie-title">Avengers: Infinity War</p>
-                    <p class="movie-year">2018</p>
-                </div>
-                <div class="movie-genre">
-                    <p class="genre">Action</p>
-                    <p class="genre">Adventure</p>
-                    <p class="genre">Sci Fi</p>
-                </div>
-                <a href="#" class="btn">Synopsis</a>
-            </div>
-        </div> -->
-    <!-- 
-        <div id="bullet">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
-
-        <div id="prev-next">
-            <div id="prev">
-                <p class="btn">prev</p>
-            </div>
-            <div id="next">
-                <p class="btn">next</p>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- ======================================= -->
-    <!-- Discover -->
-    <!-- ======================================= -->
-
-    <div class="discover">
-        <p class="discover-heading">Discover</p>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p1.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Star Wars: The Last Jedi</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
+                <div class="slide-content">
+                    <div class="slide-date">30.10.2017.</div>
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat
+                        electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
                 </div>
             </div>
         </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p2.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Star Wars: The Last Jedi</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p3.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Star Wars: The Last Jedi</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p4.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Star Wars: The Last Jedi</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p5.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Star Wars: The Last Jedi</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p6.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>American Made</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p7.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>American Made</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p8.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>A Wrinkle in Time</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p9.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Avengers: Infinity War Part I</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p10.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Avengers: Infinity War Part I</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="p11.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>Avengers: Infinity War Part I</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
-        </div>
-        <div class="discover-movie">
-            <div class="discover-movie-card">
-                <img src="poster.jpg" alt="" class="discover-movie-poster">
-            </div>
-            <div class="discover-movie-title">
-                <p>The Greatest Showman</p>
-                <div class="discover-movie-genre">
-                    <p class="discover-genre">Action</p>
-                    <p class="discover-genre">Adventure</p>
-                    <p class="discover-genre">Sci Fi</p>
-                </div>
-            </div>
+        <div class="arrows">
+            <a href="#" title="Previous" class="arrow slider-link prev"></a>
+            <a href="#" title="Next" class="arrow slider-link next"></a>
         </div>
     </div>
+
+    <!-- ======================================= -->
+    <!-- Discover Movies -->
+    <!-- ======================================= -->
+
+    <div class="carousel-template">
+        <div id="prev">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <h2>Discover Movies</h2>
+        <div class="owl-carousel carousel-movies-container">
+            <div class="movie-card">
+                <img src="p1.jpg" alt="">
+                <p>Star Wars: The Last Jedi</p>
+            </div>
+            <div class="movie-card">
+                <img src="p2.jpg" alt="">
+                <p>Star Wars: The Last Jedi</p>
+            </div>
+            <div class="movie-card">
+                <img src="p3.jpg" alt="">
+                <p>Star Wars: The Last Jedi</p>
+            </div>
+            <div class="movie-card">
+                <img src="p4.jpg" alt="">
+                <p>Star Wars: The Last Jedi</p>
+            </div>
+            <div class="movie-card">
+                <img src="p5.jpg" alt="">
+                <p>Star Wars: The Last Jedi</p>
+            </div>
+            <div class="movie-card">
+                <img src="p6.jpg" alt="">
+                <p>American Made</p>
+            </div>
+            <div class="movie-card">
+                <img src="p7.jpg" alt="">
+                <p>American Made</p>
+            </div>
+            <div class="movie-card">
+                <img src="p8.jpg" alt="">
+                <p>A Wrinkle in Time</p>
+            </div>
+        </div>
+        <div id="next">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <!-- ======================================= -->
+    <!-- Scripts -->
+    <!-- ======================================= -->
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script defer src="owl.carousel.min.js"></script>
+    <script defer src="slider.js"></script>
+    <script defer src="main.js"></script>
 </body>
 
 </html>

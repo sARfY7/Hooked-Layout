@@ -6,9 +6,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin-bottom: 10px;
+}
+
 a {
     text-decoration: none;
     color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 .custom-btn {
@@ -23,6 +35,10 @@ a {
 .custom-btn:hover {
     background: #fff;
     color: black;
+}
+
+.mt100 {
+    margin-top: 100px;
 }
 
 /* ****************************************************** */
@@ -97,71 +113,6 @@ a {
     margin-left: 0;
 }
 
-/* ****************************************************** */
-/* Discover */
-/* ****************************************************** */
-
-.discover {
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
-    justify-items: center;
-    background: #2F3238;
-}
-
-.discover-heading {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    font-size: 32px;
-    color: #fff;
-}
-
-.discover-movie {
-    width: 200px;
-}
-
-.discover-movie-card {
-    display: flex;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.discover-movie-poster {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: opacity ease 0.3s;
-}
-
-.discover-movie-title {
-    margin-top: 10px;
-}
-
-.discover-movie-title > p {
-    font-size: 16px;
-    font-weight: 300;
-    color: #fff;
-}
-
-.discover-movie-genre {
-    color: rgb(143, 143, 143);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.discover-genre {
-    margin: 8px 5px;
-}
-
-.discover-genre:nth-of-type(1) {
-    margin-left: 0;
-}
-
 
 /* ****************************************************** */
 /* MOIVE PAGE CSS */
@@ -221,6 +172,14 @@ a {
     padding-left: 8px;
 }
 
+.directors {
+    padding: 5px;
+    display: flex;
+}
+
+.director {
+    margin-left: 10px;
+}
 
 /* ****************************************************** */
 /* Extra Movie Info */
@@ -239,6 +198,27 @@ a {
 
 .overview h2, .cast h2 {
     margin: 20px 0;
+    border-left: 4px solid rgb(63, 187, 32);
+    padding-left: 10px;
+}
+
+.cast {
+    max-height: 400px;
+}
+
+.people::-webkit-scrollbar {
+    width: 0.1em;
+}
+ 
+.people::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+
+.people {
+    max-height: inherit;
+    overflow-y: scroll;
 }
 
 .person {
@@ -252,3 +232,85 @@ a {
 .avatar {
     max-width: 50px;
 }
+
+.rating {
+    margin-top: 40px;
+    max-width: 82%;
+    max-height: 200px;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.rating h2 {
+    font-weight: 400;
+}
+
+.rating p {
+    font-size: 5em;
+    font-weight: 700;
+}
+
+/* ****************************************************** */
+/* Carousel Template */
+/* ****************************************************** */
+
+.carousel-template {
+    position: relative;
+    padding: 20px 100px;
+    max-width: 100%;
+}
+
+.carousel-template h2 {
+    border-left: 4px solid rgb(63, 187, 32);
+    padding-left: 10px;
+}
+
+.movie-card {
+    max-width: 200px;
+    display: grid;
+}
+
+.movie-card img {
+    max-width: 100%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.movie-card p {
+    margin-top: 10px;
+    justify-self: center;
+}
+
+.carousel-movies-container {
+    margin-top: 20px;
+}
+
+#prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 20px;
+    width: 5%;
+    height: 20%;
+    z-index: 100;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    font-size: 4em;
+}
+
+#prev:hover, #next:hover {
+    cursor: pointer;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+/* *********************************************************** */
